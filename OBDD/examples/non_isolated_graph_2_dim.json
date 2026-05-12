@@ -1,0 +1,74 @@
+{
+  "existential_constraints": [
+    "exists_E1",
+    "exists_E2"
+  ],
+  "unary_types": [
+    {
+      "name": "vertex",
+      "literals": {
+        "E1(x,x)": false,
+        "E2(x,x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "edge1",
+      "literals": {
+        "E1(x,y)": true,
+        "E1(y,x)": true,
+        "E2(x,y)": false,
+        "E2(y,x)": false
+      },
+      "satisfies_from_left": [
+        "exists_E1"
+      ],
+      "satisfies_from_right": [
+        "exists_E1"
+      ]
+    },
+    {
+      "name": "edge2",
+      "literals": {
+        "E1(x,y)": false,
+        "E1(y,x)": false,
+        "E2(x,y)": true,
+        "E2(y,x)": true
+      },
+      "satisfies_from_left": [
+        "exists_E2"
+      ],
+      "satisfies_from_right": [
+        "exists_E2"
+      ]
+    },
+    {
+      "name": "no_edge",
+      "literals": {
+        "E1(x,y)": false,
+        "E1(y,x)": false,
+        "E2(x,y)": false,
+        "E2(y,x)": false
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "edge1",
+      "edge2",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_type": "vertex",
+      "set": "S0",
+      "right_type": "vertex"
+    }
+  ]
+}

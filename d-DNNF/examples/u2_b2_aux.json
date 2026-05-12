@@ -1,0 +1,1331 @@
+{
+  "existential_constraints": [
+    "exists_E1",
+    "exists_E2"
+  ],
+  "unary_types": [
+    {
+      "name": "u1.target.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u1.target.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u1.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u1.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "u2.target.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u2.target.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u2.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "u2.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "u1.done.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.done.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.done.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.done.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.todo.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.todo.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u1.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.todo.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.todo.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "fool",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge1",
+      "literals": {},
+      "satisfies_from_left": [
+        "exists_E1"
+      ],
+      "satisfies_from_right": [
+        "exists_E1"
+      ]
+    },
+    {
+      "name": "edge2",
+      "literals": {},
+      "satisfies_from_left": [
+        "exists_E2"
+      ],
+      "satisfies_from_right": [
+        "exists_E2"
+      ]
+    },
+    {
+      "name": "no_edge",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "fool"
+    ],
+    "S1": [
+      "no_edge"
+    ],
+    "S2": [
+      "edge1",
+      "edge2",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "u1.target.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.target.3"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.target.3"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.target.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.target.2"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.target.2"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.target.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.target.1"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.target.1"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.target.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.target.0"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.target.0"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.target.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.target.3"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.target.3"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.target.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.target.2"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.target.2"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.target.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.target.1"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.target.1"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.target.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.target.0"
+      ],
+      "right_types": [
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.target.0"
+      ],
+      "right_types": [
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.done.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.done.3"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.done.3"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.done.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.done.2"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.done.2"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.done.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.done.1"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.done.1"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.done.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u1.done.0"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.done.0"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.done.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.done.3"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.done.3"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.done.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.done.2"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.done.2"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.done.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.done.1"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.done.1"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.done.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "u2.done.0"
+      ],
+      "right_types": [
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.done.0"
+      ],
+      "right_types": [
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.todo.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.todo.3"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.todo.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.todo.2"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.todo.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.todo.1"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u1.todo.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u1.todo.0"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.todo.3"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.todo.3"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.todo.2"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.todo.2"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.todo.1"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.todo.1"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    },
+    {
+      "left_types": [
+        "u2.todo.0"
+      ],
+      "right_types": [
+        "u2.target.3",
+        "u2.target.2",
+        "u2.target.1",
+        "u2.target.0",
+        "u2.done.3",
+        "u2.done.2",
+        "u2.done.1",
+        "u2.done.0",
+        "u2.todo.3",
+        "u2.todo.2",
+        "u2.todo.1",
+        "u2.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "u2.todo.0"
+      ],
+      "right_types": [
+        "u1.target.3",
+        "u1.target.2",
+        "u1.target.1",
+        "u1.target.0",
+        "u1.done.3",
+        "u1.done.2",
+        "u1.done.1",
+        "u1.done.0",
+        "u1.todo.3",
+        "u1.todo.2",
+        "u1.todo.1",
+        "u1.todo.0"
+      ],
+      "set": "S2"
+    }
+  ]
+}

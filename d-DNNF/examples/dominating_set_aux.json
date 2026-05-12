@@ -1,0 +1,346 @@
+{
+  "existential_constraints": [
+    "dominated"
+  ],
+  "unary_types": [
+    {
+      "name": "in_set.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "in_set.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "out_set.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "out_set.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "in_set.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "in_set.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "out_set.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "out_set.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "in_set.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "in_set.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "out_set.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "out_set.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "fool",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge_dd",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge_dn",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": [
+        "dominated"
+      ]
+    },
+    {
+      "name": "edge_nd",
+      "literals": {},
+      "satisfies_from_left": [
+        "dominated"
+      ],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge_nn",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "no_edge",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "fool"
+    ],
+    "S_DD": [
+      "edge_dd",
+      "no_edge"
+    ],
+    "S_DN": [
+      "edge_dn",
+      "no_edge"
+    ],
+    "S_ND": [
+      "edge_nd",
+      "no_edge"
+    ],
+    "S_NN": [
+      "edge_nn",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "in_set.target.1",
+        "in_set.target.0",
+        "out_set.target.1",
+        "out_set.target.0"
+      ],
+      "right_types": [
+        "in_set.target.1",
+        "in_set.target.0",
+        "out_set.target.1",
+        "out_set.target.0",
+        "in_set.done.1",
+        "in_set.done.0",
+        "out_set.done.1",
+        "out_set.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "in_set.done.1",
+        "in_set.done.0",
+        "out_set.done.1",
+        "out_set.done.0"
+      ],
+      "right_types": [
+        "in_set.target.1",
+        "in_set.target.0",
+        "out_set.target.1",
+        "out_set.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "in_set.target.1",
+        "in_set.target.0"
+      ],
+      "right_types": [
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_DD"
+    },
+    {
+      "left_types": [
+        "in_set.target.1",
+        "in_set.target.0"
+      ],
+      "right_types": [
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_DN"
+    },
+    {
+      "left_types": [
+        "out_set.target.1",
+        "out_set.target.0"
+      ],
+      "right_types": [
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_ND"
+    },
+    {
+      "left_types": [
+        "out_set.target.1",
+        "out_set.target.0"
+      ],
+      "right_types": [
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_NN"
+    },
+    {
+      "left_types": [
+        "in_set.done.1",
+        "in_set.done.0"
+      ],
+      "right_types": [
+        "in_set.done.1",
+        "in_set.done.0",
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_DD"
+    },
+    {
+      "left_types": [
+        "in_set.done.1",
+        "in_set.done.0"
+      ],
+      "right_types": [
+        "out_set.done.1",
+        "out_set.done.0",
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_DN"
+    },
+    {
+      "left_types": [
+        "out_set.done.1",
+        "out_set.done.0"
+      ],
+      "right_types": [
+        "in_set.done.1",
+        "in_set.done.0",
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_ND"
+    },
+    {
+      "left_types": [
+        "out_set.done.1",
+        "out_set.done.0"
+      ],
+      "right_types": [
+        "out_set.done.1",
+        "out_set.done.0",
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_NN"
+    },
+    {
+      "left_types": [
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "right_types": [
+        "in_set.target.1",
+        "in_set.target.0",
+        "in_set.done.1",
+        "in_set.done.0",
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_DD"
+    },
+    {
+      "left_types": [
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "right_types": [
+        "out_set.target.1",
+        "out_set.target.0",
+        "out_set.done.1",
+        "out_set.done.0",
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_DN"
+    },
+    {
+      "left_types": [
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "right_types": [
+        "in_set.target.1",
+        "in_set.target.0",
+        "in_set.done.1",
+        "in_set.done.0",
+        "in_set.todo.1",
+        "in_set.todo.0"
+      ],
+      "set": "S_ND"
+    },
+    {
+      "left_types": [
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "right_types": [
+        "out_set.target.1",
+        "out_set.target.0",
+        "out_set.done.1",
+        "out_set.done.0",
+        "out_set.todo.1",
+        "out_set.todo.0"
+      ],
+      "set": "S_NN"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "existential_constraints": [
+    "exists_E1", "exists_E2"
+  ],
+  "unary_types": [
+    {
+      "name": "u1",
+      "literals": {
+        "E1(x,x)": false,
+        "E2(x,x)": false,
+        "U1(x)": true,
+        "U2(x)": false,
+        "U3(x)": false,
+        "U4(x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u2",
+      "literals": {
+        "E1(x,x)": false,
+        "E2(x,x)": false,
+        "U1(x)": false,
+        "U2(x)": true,
+        "U3(x)": false,
+        "U4(x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u3",
+      "literals": {
+        "E1(x,x)": false,
+        "E2(x,x)": false,
+        "U1(x)": false,
+        "U2(x)": false,
+        "U3(x)": true,
+        "U4(x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "u4",
+      "literals": {
+        "E1(x,x)": false,
+        "E2(x,x)": false,
+        "U1(x)": false,
+        "U2(x)": false,
+        "U3(x)": false,
+        "U4(x)": true
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "edge1",
+      "literals": {
+        "E1(x,y)": true,
+        "E1(y,x)": true,
+        "E2(x,y)": false,
+        "E2(y,x)": false
+      },
+      "satisfies_from_left": [
+        "exists_E1"
+      ],
+      "satisfies_from_right": [
+        "exists_E1"
+      ]
+    },
+    {
+      "name": "edge2",
+      "literals": {
+        "E1(x,y)": false,
+        "E1(y,x)": false,
+        "E2(x,y)": true,
+        "E2(y,x)": true
+      },
+      "satisfies_from_left": [
+        "exists_E2"
+      ],
+      "satisfies_from_right": [
+        "exists_E2"
+      ]
+    },
+    {
+      "name": "no_edge",
+      "literals": {
+        "E1(x,y)": false,
+        "E1(y,x)": false,
+        "E2(x,y)": false,
+        "E2(y,x)": false
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "no_edge"
+    ],
+    "S1": [
+      "edge1",
+      "edge2",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_type": "u1",
+      "set": "S0",
+      "right_type": "u1"
+    },
+    {
+      "left_types": [
+        "u1"
+      ],
+      "right_types": [
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_type": "u2",
+      "set": "S0",
+      "right_type": "u2"
+    },
+    {
+      "left_types": [
+        "u2"
+      ],
+      "right_types": [
+        "u1",
+        "u3",
+        "u4"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_type": "u3",
+      "set": "S0",
+      "right_type": "u3"
+    },
+    {
+      "left_types": [
+        "u3"
+      ],
+      "right_types": [
+        "u1",
+        "u2",
+        "u4"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_type": "u4",
+      "set": "S0",
+      "right_type": "u4"
+    },
+    {
+      "left_types": [
+        "u4"
+      ],
+      "right_types": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "set": "S1"
+    }
+  ]
+}

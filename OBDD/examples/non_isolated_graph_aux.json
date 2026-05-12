@@ -1,0 +1,200 @@
+{
+  "existential_constraints": [
+    "exists_E"
+  ],
+  "unary_types": [
+    {
+      "name": "vertex.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "fool",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge",
+      "literals": {},
+      "satisfies_from_left": [
+        "exists_E"
+      ],
+      "satisfies_from_right": [
+        "exists_E"
+      ]
+    },
+    {
+      "name": "no_edge",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "fool"
+    ],
+    "S1": [
+      "edge",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "vertex.target.1"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.1"
+      ],
+      "right_types": [
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.target.0"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.0"
+      ],
+      "right_types": [
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.1"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.1"
+      ],
+      "right_types": [
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.0"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.0"
+      ],
+      "right_types": [
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.1"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.0"
+      ],
+      "right_types": [
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    }
+  ]
+}

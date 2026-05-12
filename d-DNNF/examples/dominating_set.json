@@ -1,0 +1,118 @@
+{
+  "existential_constraints": [
+    "dominated"
+  ],
+  "unary_types": [
+    {
+      "name": "in_set",
+      "literals": {
+        "D(x)": true,
+        "E(x,x)": false
+      },
+      "satisfies_self": [
+        "dominated"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "out_set",
+      "literals": {
+        "D(x)": false,
+        "E(x,x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "edge_dd",
+      "literals": {
+        "E(x,y)": true,
+        "E(y,x)": true
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge_dn",
+      "literals": {
+        "E(x,y)": true,
+        "E(y,x)": true
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": [
+        "dominated"
+      ]
+    },
+    {
+      "name": "edge_nd",
+      "literals": {
+        "E(x,y)": true,
+        "E(y,x)": true
+      },
+      "satisfies_from_left": [
+        "dominated"
+      ],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge_nn",
+      "literals": {
+        "E(x,y)": true,
+        "E(y,x)": true
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "no_edge",
+      "literals": {
+        "E(x,y)": false,
+        "E(y,x)": false
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S_DD": [
+      "edge_dd",
+      "no_edge"
+    ],
+    "S_DN": [
+      "edge_dn",
+      "no_edge"
+    ],
+    "S_ND": [
+      "edge_nd",
+      "no_edge"
+    ],
+    "S_NN": [
+      "edge_nn",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_type": "in_set",
+      "right_type": "in_set",
+      "set": "S_DD"
+    },
+    {
+      "left_type": "in_set",
+      "right_type": "out_set",
+      "set": "S_DN"
+    },
+    {
+      "left_type": "out_set",
+      "right_type": "in_set",
+      "set": "S_ND"
+    },
+    {
+      "left_type": "out_set",
+      "right_type": "out_set",
+      "set": "S_NN"
+    }
+  ]
+}

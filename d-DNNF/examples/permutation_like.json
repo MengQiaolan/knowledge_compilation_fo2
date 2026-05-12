@@ -1,0 +1,109 @@
+{
+  "existential_constraints": [
+    "out",
+    "in"
+  ],
+  "unary_types": [
+    {
+      "name": "loop",
+      "literals": {
+        "P(x,x)": true
+      },
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop",
+      "literals": {
+        "P(x,x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "TT",
+      "literals": {
+        "P(x,y)": true,
+        "P(y,x)": true
+      },
+      "satisfies_from_left": [
+        "out",
+        "in"
+      ],
+      "satisfies_from_right": [
+        "in",
+        "out"
+      ]
+    },
+    {
+      "name": "TF",
+      "literals": {
+        "P(x,y)": true,
+        "P(y,x)": false
+      },
+      "satisfies_from_left": [
+        "out"
+      ],
+      "satisfies_from_right": [
+        "in"
+      ]
+    },
+    {
+      "name": "FT",
+      "literals": {
+        "P(x,y)": false,
+        "P(y,x)": true
+      },
+      "satisfies_from_left": [
+        "in"
+      ],
+      "satisfies_from_right": [
+        "out"
+      ]
+    },
+    {
+      "name": "FF",
+      "literals": {
+        "P(x,y)": false,
+        "P(y,x)": false
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "TT",
+      "TF",
+      "FT",
+      "FF"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "loop"
+      ],
+      "right_types": [
+        "loop",
+        "non_loop"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop"
+      ],
+      "right_types": [
+        "loop",
+        "non_loop"
+      ],
+      "set": "S0"
+    }
+  ]
+}

@@ -1,0 +1,1164 @@
+{
+  "existential_constraints": [
+    "out",
+    "in"
+  ],
+  "unary_types": [
+    {
+      "name": "loop.target.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.target.2",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.target.0",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.target.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.target.2",
+      "literals": {},
+      "satisfies_self": [
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "out"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.done.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.done.2",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.done.0",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.done.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.done.2",
+      "literals": {},
+      "satisfies_self": [
+        "in"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "non_loop.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "out"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "non_loop.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "loop.todo.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.todo.2",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "loop.todo.0",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.todo.3",
+      "literals": {},
+      "satisfies_self": [
+        "out",
+        "in"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "non_loop.todo.2",
+      "literals": {},
+      "satisfies_self": [
+        "in"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "non_loop.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "out"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "non_loop.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "fool",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "TT",
+      "literals": {},
+      "satisfies_from_left": [
+        "out",
+        "in"
+      ],
+      "satisfies_from_right": [
+        "out",
+        "in"
+      ]
+    },
+    {
+      "name": "TF",
+      "literals": {},
+      "satisfies_from_left": [
+        "out"
+      ],
+      "satisfies_from_right": [
+        "in"
+      ]
+    },
+    {
+      "name": "FT",
+      "literals": {},
+      "satisfies_from_left": [
+        "in"
+      ],
+      "satisfies_from_right": [
+        "out"
+      ]
+    },
+    {
+      "name": "FF",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "fool"
+    ],
+    "S1": [
+      "TT",
+      "TF",
+      "FT",
+      "FF"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "loop.target.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.target.3"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.target.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.target.2"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.target.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.target.1"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.target.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.target.0"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.target.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.target.3"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.target.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.target.2"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.target.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.target.1"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.target.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.target.0"
+      ],
+      "right_types": [
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.done.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.done.3"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.done.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.done.2"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.done.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.done.1"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.done.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "loop.done.0"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.done.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.done.3"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.done.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.done.2"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.done.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.done.1"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.done.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "non_loop.done.0"
+      ],
+      "right_types": [
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.todo.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.todo.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.todo.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "loop.todo.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.todo.3"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.todo.2"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.todo.1"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "non_loop.todo.0"
+      ],
+      "right_types": [
+        "loop.target.3",
+        "loop.target.2",
+        "loop.target.1",
+        "loop.target.0",
+        "non_loop.target.3",
+        "non_loop.target.2",
+        "non_loop.target.1",
+        "non_loop.target.0",
+        "loop.done.3",
+        "loop.done.2",
+        "loop.done.1",
+        "loop.done.0",
+        "non_loop.done.3",
+        "non_loop.done.2",
+        "non_loop.done.1",
+        "non_loop.done.0",
+        "loop.todo.3",
+        "loop.todo.2",
+        "loop.todo.1",
+        "loop.todo.0",
+        "non_loop.todo.3",
+        "non_loop.todo.2",
+        "non_loop.todo.1",
+        "non_loop.todo.0"
+      ],
+      "set": "S1"
+    }
+  ]
+}

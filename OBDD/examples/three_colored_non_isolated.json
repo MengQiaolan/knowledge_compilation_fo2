@@ -1,0 +1,116 @@
+{
+  "existential_constraints": [
+    "exists_E"
+  ],
+  "unary_types": [
+    {
+      "name": "red",
+      "literals": {
+        "E(x,x)": false,
+        "Red(x)": true,
+        "Blue(x)": false,
+        "Green(x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "blue",
+      "literals": {
+        "E(x,x)": false,
+        "Red(x)": false,
+        "Blue(x)": true,
+        "Green(x)": false
+      },
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "green",
+      "literals": {
+        "E(x,x)": false,
+        "Red(x)": false,
+        "Blue(x)": false,
+        "Green(x)": true
+      },
+      "satisfies_self": [],
+      "sat_bound": 1
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "edge",
+      "literals": {
+        "E(x,y)": true,
+        "E(y,x)": true
+      },
+      "satisfies_from_left": ["exists_E"],
+      "satisfies_from_right": ["exists_E"]
+    },
+    {
+      "name": "no_edge",
+      "literals": {
+        "E(x,y)": false,
+        "E(y,x)": false
+      },
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "no_edge"
+    ],
+    "S1": [
+      "edge",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_type": "red",
+      "set": "S0",
+      "right_type": "red"
+    },
+    {
+      "left_type": "red",
+      "set": "S1",
+      "right_type": "blue"
+    },
+    {
+      "left_type": "blue",
+      "set": "S0",
+      "right_type": "blue"
+    },
+    {
+      "left_type": "blue",
+      "set": "S1",
+      "right_type": "red"
+    },
+    {
+      "left_type": "green",
+      "set": "S0",
+      "right_type": "green"
+    },
+    {
+      "left_type": "green",
+      "set": "S1",
+      "right_type": "red"
+    },
+    {
+      "left_type": "green",
+      "set": "S1",
+      "right_type": "blue"
+    },
+    {
+      "left_type": "red",
+      "set": "S1",
+      "right_type": "green"
+    },
+    {
+      "left_type": "blue",
+      "set": "S1",
+      "right_type": "green"
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "existential_constraints": [
+    "exists_E1",
+    "exists_E2"
+  ],
+  "unary_types": [
+    {
+      "name": "vertex.target.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.target.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.target.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.target.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 1
+    },
+    {
+      "name": "vertex.done.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.done.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.done.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.done.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.todo.3",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1",
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.todo.2",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E2"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.todo.1",
+      "literals": {},
+      "satisfies_self": [
+        "exists_E1"
+      ],
+      "sat_bound": 2
+    },
+    {
+      "name": "vertex.todo.0",
+      "literals": {},
+      "satisfies_self": [],
+      "sat_bound": 2
+    }
+  ],
+  "binary_types": [
+    {
+      "name": "fool",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "edge1",
+      "literals": {},
+      "satisfies_from_left": [
+        "exists_E1"
+      ],
+      "satisfies_from_right": [
+        "exists_E1"
+      ]
+    },
+    {
+      "name": "edge2",
+      "literals": {},
+      "satisfies_from_left": [
+        "exists_E2"
+      ],
+      "satisfies_from_right": [
+        "exists_E2"
+      ]
+    },
+    {
+      "name": "edge3",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    },
+    {
+      "name": "no_edge",
+      "literals": {},
+      "satisfies_from_left": [],
+      "satisfies_from_right": []
+    }
+  ],
+  "candidate_sets": {
+    "S0": [
+      "fool"
+    ],
+    "S1": [
+      "edge1",
+      "edge2",
+      "edge3",
+      "no_edge"
+    ]
+  },
+  "pair_binary_rules": [
+    {
+      "left_types": [
+        "vertex.target.3"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.3"
+      ],
+      "right_types": [
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.target.2"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.2"
+      ],
+      "right_types": [
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.target.1"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.1"
+      ],
+      "right_types": [
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.target.0"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.target.0"
+      ],
+      "right_types": [
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.3"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.3"
+      ],
+      "right_types": [
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.2"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.2"
+      ],
+      "right_types": [
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.1"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.1"
+      ],
+      "right_types": [
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.done.0"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0"
+      ],
+      "set": "S0"
+    },
+    {
+      "left_types": [
+        "vertex.done.0"
+      ],
+      "right_types": [
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.3"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.2"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.1"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    },
+    {
+      "left_types": [
+        "vertex.todo.0"
+      ],
+      "right_types": [
+        "vertex.target.3",
+        "vertex.target.2",
+        "vertex.target.1",
+        "vertex.target.0",
+        "vertex.done.3",
+        "vertex.done.2",
+        "vertex.done.1",
+        "vertex.done.0",
+        "vertex.todo.3",
+        "vertex.todo.2",
+        "vertex.todo.1",
+        "vertex.todo.0"
+      ],
+      "set": "S1"
+    }
+  ]
+}
